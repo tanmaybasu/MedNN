@@ -1,4 +1,4 @@
-# CosineWeightedTkNN
+# MedoidBasedWeightedTkNN
 An attempt to overcome the limitations of Nearest Neighbour Classifiers.
 # Description of the codebase
 The file named "cosine_weighted_tkNN" (both .py and .ipynb) consists of implementation of the algorithm.
