@@ -2,7 +2,7 @@
 Implementation of the algorithm in the paper entitled "[A medoid‑based weighting scheme for nearest‑neighbor decision rule
 toward efective text categorization](https://link.springer.com/content/pdf/10.1007/s42452-020-2738-8.pdf)"
 
-# How to run the model?
+## How to run the model?
 
 The model is implemented in MedNN.py. Run the following lines to train the classifier on a set of data samples and subsequently test it's performance on another set of data samples. 
 
