@@ -14,7 +14,7 @@ from sklearn.feature_selection import SelectKBest,chi2,mutual_info_classif
 
 
 
-class MkNN():
+class MedNN():
     def __init__(self,gamma = 0.025,L=2):
         self.gamma = gamma
         self.L = L
