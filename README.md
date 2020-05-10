@@ -1,6 +1,6 @@
 # Medoid Based Nearest Neghbor Decision Rule (MedNN)
-Implementation of the algorithm in the paper entitled "[A medoid‑based weighting scheme for nearest‑neighbor decision rule
-toward efective text categorization](https://link.springer.com/content/pdf/10.1007/s42452-020-2738-8.pdf)"
+Implementation of the algorithm in the papers entitled "[A medoid‑based weighting scheme for nearest‑neighbor decision rule
+toward efective text categorization](https://link.springer.com/content/pdf/10.1007/s42452-020-2738-8.pdf)" and "[An Effective Nearest Neighbor Classification Technique Using Medoid Based Weighting Scheme](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/ICD8039.pdf)"
 
 ## How to run the model?
 
