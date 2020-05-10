@@ -1,3 +1,7 @@
-# MedoidBasedWeightedTkNN
-Implementation of the algorithm in the paper entitled "[An Effective Nearest Neighbor Classification Technique Using
-Medoid Based Weighting Scheme](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/ICD8039.pdf)"
+# medoid-weighted-kNN
+Implementation of the algorithm in the paper entitled "[A medoid‑based weighting scheme for nearest‑neighbor decision rule
+toward efective text categorization](https://link.springer.com/content/pdf/10.1007/s42452-020-2738-8.pdf)"
+
+The code `MkNN.py` contains the algorithm implemented in a regular scikit-learn classifier fashion.
+
+An example of how to run the code is shown in `testing.py`.
