@@ -1,4 +1,4 @@
-# medoid-weighted-kNN
+# Medoid Based Nearest Neghbor Decision Rule (MedNN)
 Implementation of the algorithm in the paper entitled "[A medoid‑based weighting scheme for nearest‑neighbor decision rule
 toward efective text categorization](https://link.springer.com/content/pdf/10.1007/s42452-020-2738-8.pdf)"
 
