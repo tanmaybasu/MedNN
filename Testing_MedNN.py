@@ -2,10 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sunday, May 10, 2020 @ 14:37:44
-
 @author: Avideep Mukherjee
-
-
 """
 
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
