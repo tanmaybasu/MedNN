@@ -1,23 +1,22 @@
-import os,sys
-import numpy as np
-import scipy.sparse as sp
-from scipy.spatial import distance
-from collections import Counter, defaultdict
-from scipy.sparse import csc_matrix
-from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
-from sklearn.model_selection import StratifiedShuffleSplit, KFold, train_test_split, GridSearchCV
-from copy import deepcopy
-from sklearn.pipeline import Pipeline 
-from sklearn.feature_extraction.text import TfidfVectorizer, TfidfTransformer, CountVectorizer
-from sklearn.preprocessing import LabelEncoder, MinMaxScaler
-from sklearn.feature_selection import SelectKBest,chi2,mutual_info_classif 
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sunday, May 10, 2020 @ 11:25:30
 
+@author: Avideep Mukherjee
+
+"""
+import numpy as np
+from scipy.spatial import distance
+from copy import deepcopy
 
 
 class MedNN():
-    def __init__(self,gamma = 0.025,L=2):
+    def __init__(self,gamma = 0.025,L=2,metric='cosine'):
         self.gamma = gamma
         self.L = L
+        self.metric= metric
+        
     def findMedians(self,X_train,y_train,class_names):
         medians = {}
         for class_name in class_names:
@@ -34,6 +33,7 @@ class MedNN():
                     median_row = deepcopy(row)
             medians[class_name] = np.array(median_row).astype(np.float)
         return medians
+    
     def fit(self,X_train,y_train):
         self.X_train = X_train
         self.y_train = y_train
@@ -42,6 +42,7 @@ class MedNN():
         for i,val in enumerate(self.class_names):
             self.class_names_dict[i] = val
         self.medians = self.findMedians(self.X_train,self.y_train,self.class_names)
+        
     def findSelectedSamples(self,X_train,y_train,x_test,medians,class_names,class_names_dict):
         X_train = np.array(self.X_train).astype(np.float)
         x_test = np.array(x_test).astype(np.float)
@@ -63,7 +64,20 @@ class MedNN():
         x_test = np.array(x_test).astype(np.float)
         dist = np.empty(len(x))
         for i in range(len(x)):
-            dist[i] = distance.cosine(x[i],x_test)
+#            st=globals()["distance."+self.metric]
+#            dist=st(x_train,x_test)
+            if self.metric=='cosine':
+                dist[i] = distance.cosine(x[i],x_test) 
+            elif self.metric=='chebyshev':
+                dist[i] = distance.chebyshev(x[i],x_test) 
+            elif self.metric=='cityblock':
+                dist[i] = distance.cityblock(x[i],x_test) 
+            elif self.metric=='euclidean':
+                dist[i] = distance.euclidean(x[i],x_test) 
+            elif self.metric=='minkowski':
+                dist[i] = distance.minkowski(x[i],x_test) 
+            else:
+                print('Error!!! Enter a correct distance function and try again \n')
         dist = np.argsort(dist)
         x_sorted = np.empty(shape = (len(x),len(X_train[1])))
         y_sorted = []
@@ -73,6 +87,7 @@ class MedNN():
             y_sorted.append(y[i])
             k = k + 1
         return x_sorted,y_sorted
+    
     def predict(self,X_test):
         Y_test = np.empty(X_test.shape[0])
         for ii in range(X_test.shape[0]):
