@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sunday, May 10, 2020 @ 11:25:30
-
 @author: Avideep Mukherjee
-
 """
 import numpy as np
 from scipy.spatial import distance
