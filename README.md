@@ -8,10 +8,10 @@ This method is developed in spirit of the nearest neighbor decision rule using a
 
 ## How to run the model?
 
-The model is implemented in MedNN.py. Run the following lines to train the classifier on a set of data samples and subsequently test it's performance on another set of data samples. 
+The model is implemented in `MedNN.py`. Run the following lines to train the classifier on a set of data samples and subsequently test it's performance on another set of data samples. 
 
 ```
-clf = MedkNN(gamma=0.025,L=3,metric='cosine')
+clf = MedNN(gamma=0.025,L=3,metric='cosine')
 clf.fit(X_train,y_train)
 predicted_class_label = clf.predict(X_test)
 ```
