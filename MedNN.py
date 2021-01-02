@@ -76,7 +76,7 @@ class MedNN():
                 dist[i] = distance.minkowski(x[i],x_test) 
             else:
                 print('Error!!! Enter a correct distance function and try again \n')
-        dist = np.argsort(dist)
+        dist = np.argsort(dist)      # Returning the indices of the similarity values (distance values are sorted in ascending order)
         x_sorted = np.empty(shape = (len(x),len(X_train[1])))
         y_sorted = []
         k = 0
