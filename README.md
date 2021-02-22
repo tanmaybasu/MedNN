@@ -7,7 +7,7 @@ This method is developed in spirit of the nearest neighbor decision rule followi
 [Avideep Mukherjee and Tanmay Basu. An Effective Nearest Neighbor Classification Technique Using Medoid Based Weighting Scheme, published in Proceedings of the Fourteenth International Conference on Data Science, pp.231-234, Las Vegas, USA, 2018](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/ICD8039.pdf).
 
 ## Prerequsites
-[Python 3](https://www.python.org/downloads/), [Copy](https://docs.python.org/3/library/copy.html), [NumPy](https://numpy.org/install/), [Scipy](https://pypi.org/project/scipy/) [Scikit-Learn](https://scikit-learn.org/0.16/install.html)
+[Python 3](https://www.python.org/downloads/), [Copy](https://docs.python.org/3/library/copy.html), [NumPy](https://numpy.org/install/), [Scipy](https://pypi.org/project/scipy/), [Scikit-Learn](https://scikit-learn.org/0.16/install.html)
 
 ## How to run the model?
 
