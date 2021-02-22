@@ -6,6 +6,9 @@ This method is developed in spirit of the nearest neighbor decision rule followi
 
 [Avideep Mukherjee and Tanmay Basu. An Effective Nearest Neighbor Classification Technique Using Medoid Based Weighting Scheme, published in Proceedings of the Fourteenth International Conference on Data Science, pp.231-234, Las Vegas, USA, 2018](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/ICD8039.pdf).
 
+## Prerequsites
+[Python 3 version](https://www.python.org/downloads/), [Scikit-Learn](https://scikit-learn.org/0.16/install.html), [NLTK](https://www.nltk.org/install.html)
+
 ## How to run the model?
 
 The model is implemented in `MedNN.py`. Run the following lines to train the classifier on a set of data samples and subsequently test it's performance on another set of data samples. 
@@ -18,4 +21,21 @@ predicted_class_label = clf.predict(X_test)
 
 Here `X_train` is the training data and it is a numeric array or matrix and has shapes '[n_samples, n_features]'. `y_train` is the class labels of individual samples in X_train. Similarly, `X_test` is the test data and it is also an array or matrix and has shapes '[n_samples, n_features]'. The following options of `distance metrics` are available: 'cosine', 'chebyshev', 'cityblock', 'euclidean', 'minkowski' and the `default` is `cosine distance`. `L` is the threshold on majority voting and `gamma` is the threshold on difference of weights between two classes for a test data point. The value of gamma is recommended to be close to zero.
 
-An example code to execute `MedNN.py` is uploaded as `Testing_MedNN.py`. For any further query, comment or suggestion, you may reach out to me at welcometanmay@gmail.com or Avideep Mukherjee at mukherjeeavideep@gmail.com
+An example code to execute `MedNN.py` is uploaded as `Testing_MedNN.py`. 
+
+## Contact
+
+For any further query, comment or suggestion, you may reach out to me at welcometanmay@gmail.com
+
+## Citing
+```
+@article{mukherjee20mednn,
+	title={A medoid-based weighting scheme for nearest-neighbor decision rule toward effective text categorization},
+	author={A. Mukherjee and T. Basu},
+	journal={SN Applied Sciences},
+	volume={2},
+	pages={1--9},
+	year={2020},
+	publisher={Springer}
+}
+```
