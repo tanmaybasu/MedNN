@@ -7,7 +7,7 @@ This method is developed in spirit of the nearest neighbor decision rule followi
 [Avideep Mukherjee and Tanmay Basu. An Effective Nearest Neighbor Classification Technique Using Medoid Based Weighting Scheme, published in Proceedings of the Fourteenth International Conference on Data Science, pp.231-234, Las Vegas, USA, 2018](https://csce.ucmss.com/cr/books/2018/LFS/CSREA2018/ICD8039.pdf).
 
 ## Prerequsites
-[Python 3 version](https://www.python.org/downloads/), [Scikit-Learn](https://scikit-learn.org/0.16/install.html), [NLTK](https://www.nltk.org/install.html)
+[Python 3 version](https://www.python.org/downloads/), [NumPy](https://numpy.org/install/), [Scipy](https://pypi.org/project/scipy/) [Scikit-Learn](https://scikit-learn.org/0.16/install.html)
 
 ## How to run the model?
 
@@ -29,7 +29,7 @@ For any further query, comment or suggestion, you may reach out to me at welcome
 
 ## Citing
 ```
-@article{mukherjee20mednn,
+@article{mukherjee20mednntext,
 	title={A medoid-based weighting scheme for nearest-neighbor decision rule toward effective text categorization},
 	author={A. Mukherjee and T. Basu},
 	journal={SN Applied Sciences},
@@ -37,5 +37,16 @@ For any further query, comment or suggestion, you may reach out to me at welcome
 	pages={1--9},
 	year={2020},
 	publisher={Springer}
+}
+
+@inproceedings{mukherjee20mednn,
+ author    = "A. Mukherjee and T. Basu ",
+ title     = "An Effective Nearest Neighbor Classification Technique Using Medoid Based Weighting Scheme ",
+ year      = "2018 ",
+ pages     = "231-234 ",
+ editor    = " ",
+ booktitle = "Proceedings of International Conference on Data Science ",
+ address   = " ",
+ publisher = "CSREA Press "
 }
 ```
