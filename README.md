@@ -27,7 +27,7 @@ An example code to execute `MedNN.py` is uploaded as `Testing_MedNN.py`.
 
 For any further query, comment or suggestion, you may reach out to me at welcometanmay@gmail.com or Avideep Mukherjee at mukherjeeavideep@gmail.com
 
-## Citing
+## Citation
 ```
 @article{mukherjee20mednntext,
 	title={A medoid-based weighting scheme for nearest-neighbor decision rule toward effective text categorization},
